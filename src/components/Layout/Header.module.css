@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 40px 0;
+  padding: 0 100px;
+}
+
+.header svg {
+  width: 210px;
+  height: 68px;
+}
+
+.nav-list {
+  display: flex;
+  color: var(--primary-color);
+  font-size: 24px;
+}
+
+.nav-list li {
+  margin: 17px;
+}
+
+.nav-list .active {
+  border-bottom: 1px solid var(--primary-color);
+  margin-right: 43px;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    margin: 20px 0;
+    padding: 0 20px;
+  }
+
+  .nav-list {
+    font-size: 12px;
+    min-width: 160px;
+  }
+
+  .nav-list li {
+    margin-top: 18px;
+    margin-bottom: 12px;
+  }
+
+  .nav-list .active {
+    margin-right: 10px;
+  }
+
+  .header svg {
+    width: 145px;
+    height: 47px;
+  }
+}

@@ -1,10 +1,21 @@
-import classes from './App.module.css';
+import Header from "./components/Layout/Header";
+import Footer from "./components/Layout/Footer";
+import DropdownLarge from "./components/UI/Stateful/DropdownLarge";
+import { Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
-    <div className="App">
-      <header className={classes.header}>Hello World</header>
-    </div>
+    <>
+      <Header />
+      <Routes>
+        <Route
+          path="/about"
+          element={<DropdownLarge title="testTitle" info="testInfo" />}
+        />
+        <Route path="/" exact element={<Footer />} />
+      </Routes>
+      <Footer />
+    </>
   );
 };
 

@@ -1,0 +1,51 @@
+.loader {
+  position: static;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: var(--white);
+}
+
+.content {
+  animation: appear 0.3s ease forwards;
+}
+
+.content h2 {
+  font-size: 42px;
+  color: var(--primary-color);
+}
+
+.content .loader-circle {
+  background: transparent;
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  border: 10px solid var(--grey);
+  border-top: 10px solid var(--primary-color);
+  border-radius: 50%;
+  animation: load 1s linear infinite;
+}
+
+@keyframes load {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes appear {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
