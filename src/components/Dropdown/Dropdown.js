@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Chevron from "../UI/SVG/Chevron";
 import styles from "./Dropdown.module.css";
 
