@@ -1,16 +1,28 @@
 import React from "react";
+import PropTypes from "prop-types";
 import Chevron from "../UI/SVG/Chevron";
 import styles from "./Dropdown.module.css";
+import { useLocation } from "react-router-dom";
 
-const Dropdown = (props) => {
+const Dropdown = ({ title, description }) => {
+  const { pathname } = useLocation();
+  const isAboutPage = pathname === "/about";
+  const detailsStyles = isAboutPage
+    ? styles.details
+    : `${styles.details} ${styles["house-page-details"]}`;
   return (
-    <details className={styles.details}>
+    <details className={detailsStyles}>
       <summary>
-        {props.title} <Chevron />
+        {title} <Chevron />
       </summary>
-      <p>{props.info}</p>
+      <p>{description}</p>
     </details>
   );
+};
+
+Dropdown.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string,
 };
 
 export default Dropdown;
