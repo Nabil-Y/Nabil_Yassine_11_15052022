@@ -1,6 +1,6 @@
 import Header from "./components/Layout/Header";
 import Footer from "./components/Layout/Footer";
-import Banner from "./components/Banner/Banner";
+import Home from "./pages/Home/Home";
 import Error from "./pages/Error/Error";
 import About from "./pages/About/About";
 import { Routes, Route } from "react-router-dom";
@@ -13,7 +13,7 @@ const App = () => {
       {/* <Loader /> */}
       <Routes>
         <Route path="/about" element={<About />} />
-        <Route path="/" exact element={<Banner />} />
+        <Route path="/" exact element={<Home />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
