@@ -49,6 +49,7 @@
   background: var(--grey);
   color: var(--primary-color);
   padding: 18px;
+  white-space: pre-wrap;
 }
 
 .house-page-details p {

@@ -18,13 +18,11 @@ const Carousel = ({ imgList, title }) => {
   }
 
   const handleClickLeft = () => {
-    console.log("clicked left");
     if (counter === 1) return setCounter(imgList.length);
     setCounter((prevCount) => prevCount - 1);
   };
 
   const handleClickRight = () => {
-    console.log("clicked right");
     if (counter === imgList.length) return setCounter(1);
     setCounter((prevCount) => prevCount + 1);
   };

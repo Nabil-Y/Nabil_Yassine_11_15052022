@@ -5,10 +5,11 @@ import styles from "./Stars.module.css";
 
 const Stars = ({ rating }) => {
   const starsContainer = [<Star />, <Star />, <Star />, <Star />, <Star />];
+  const numberRating = +rating;
   return (
     <div className={styles.stars}>
       {starsContainer.map((star, index) => {
-        if (index < rating + 1) {
+        if (index < numberRating) {
           return (
             <div key={index + rating} className={styles.filled}>
               {star}
@@ -23,7 +24,7 @@ const Stars = ({ rating }) => {
 };
 
 Stars.propTypes = {
-  rating: PropTypes.number,
+  rating: PropTypes.string,
 };
 
 export default Stars;
