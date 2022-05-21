@@ -1,0 +1,34 @@
+.stars {
+  display: flex;
+}
+
+.stars svg {
+  width: 30px;
+  height: 30px;
+}
+
+.stars div {
+  margin-right: 10px;
+}
+
+.stars div:last-child {
+  margin-right: 0px;
+}
+
+.filled path {
+  fill: var(--primary-color);
+}
+
+@media screen and (max-width: 768px) {
+  .stars svg {
+    width: 15px;
+    height: 15px;
+  }
+  .stars div {
+    margin-right: 5px;
+  }
+
+  .stars div:last-child {
+    margin-right: 0px;
+  }
+}

@@ -10,7 +10,7 @@ const Banner = () => {
     return (
       <section className={`${styles.banner} ${styles["height-limiter"]}`}>
         <img src={homeImg} alt="Falaise donnant sur la mer" />
-        <h1>Chez vous, partout et ailleurs</h1>
+        <h1>{"Chez vous,\npartout et ailleurs"}</h1>
       </section>
     );
   if (pathname === "/about")
