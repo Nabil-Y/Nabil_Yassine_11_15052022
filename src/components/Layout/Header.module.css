@@ -1,9 +1,14 @@
 .header {
+  width: 100%;
+  padding: 40px 100px 0;
+  background: var(--white);
+}
+
+.header-wrapper {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  margin: 40px 0;
-  padding: 0 100px;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .header svg {
@@ -35,8 +40,7 @@
 
 @media screen and (max-width: 768px) {
   .header {
-    margin: 20px 0;
-    padding: 0 20px;
+    padding: 20px 20px 0;
   }
 
   .nav-list {

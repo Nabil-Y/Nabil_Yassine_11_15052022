@@ -15,17 +15,19 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
-      <Logo />
-      <nav>
-        <ul className={styles["nav-list"]}>
-          <li className={isHomeLinkActive()}>
-            <Link to="/">Accueil</Link>
-          </li>
-          <li className={isAboutPage ? styles.active : ""}>
-            <Link to="/about">A Propos</Link>
-          </li>
-        </ul>
-      </nav>
+      <div className={styles["header-wrapper"]}>
+        <Logo />
+        <nav>
+          <ul className={styles["nav-list"]}>
+            <li className={isHomeLinkActive()}>
+              <Link to="/">Accueil</Link>
+            </li>
+            <li className={isAboutPage ? styles.active : ""}>
+              <Link to="/about">A Propos</Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
   );
 };
