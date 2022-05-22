@@ -30,12 +30,17 @@ const House = () => {
 
     return (
       <main className={styles["house-page"]}>
-        <Carousel title={title} imgList={pictures} />
-        <Profile houseData={houseData} />
-        <section className={styles.descriptions}>
-          <Dropdown title={"Description"} description={description} />
-          <Dropdown title={"Équipements"} description={equipmentsDescription} />
-        </section>
+        <div className={styles["house-page-wrapper"]}>
+          <Carousel title={title} imgList={pictures} />
+          <Profile houseData={houseData} />
+          <section className={styles.descriptions}>
+            <Dropdown title={"Description"} description={description} />
+            <Dropdown
+              title={"Équipements"}
+              description={equipmentsDescription}
+            />
+          </section>
+        </div>
       </main>
     );
   };

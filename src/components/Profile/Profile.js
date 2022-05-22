@@ -5,6 +5,8 @@ import Stars from "../UI/Stars";
 import styles from "./Profile.module.css";
 
 const Profile = ({ houseData }) => {
+  const formattedHostName = houseData.host.name.replace(" ", "\n");
+  console.log(formattedHostName);
   return (
     <section className={styles.profile}>
       <div className={styles["profile-left"]}>
@@ -18,7 +20,7 @@ const Profile = ({ houseData }) => {
       </div>
       <div className={styles["profile-right"]}>
         <div className={styles["name-and-picture"]}>
-          <div className={styles["host-name"]}>{houseData.host.name}</div>
+          <div className={styles["host-name"]}>{formattedHostName}</div>
           <img
             src={houseData.host.picture}
             alt={`Portrait de ${houseData.host.name}`}
