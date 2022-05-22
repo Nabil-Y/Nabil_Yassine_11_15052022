@@ -61,6 +61,13 @@
   .details {
     font-size: 12px;
   }
+  .house-page-details {
+    width: 100%;
+  }
+  .house-page-details p {
+    font-size: 12px;
+    min-height: auto;
+  }
 
   .details summary {
     height: 30px;

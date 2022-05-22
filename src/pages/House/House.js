@@ -27,6 +27,7 @@ const House = () => {
     const equipmentsDescription = equipments
       .map((item) => item + "\n")
       .join("");
+
     return (
       <main className={styles["house-page"]}>
         <Carousel title={title} imgList={pictures} />

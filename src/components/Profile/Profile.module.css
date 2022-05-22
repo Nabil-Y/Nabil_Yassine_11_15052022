@@ -1,6 +1,7 @@
 .profile {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color: var(--primary-color);
 }
 
@@ -21,7 +22,7 @@
   margin-top: 20px;
 }
 
-.tags div {
+.tags > * {
   margin-right: 10px;
 }
 
@@ -60,7 +61,7 @@
     line-height: 20px;
   }
   .tags {
-    margin-top: 10px;
+    margin: 10px 0;
   }
 
   .profile-right {
