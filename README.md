@@ -1,10 +1,21 @@
-# Getting Started with Create React App
+# Project Kasa - React, React Router
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Live Demo [Here](https://nabil-yassine-11-15052022.vercel.app/)
 
-In the project directory, you can run:
+## First steps
+
+1. Clone this repositery
+1. Run `npm install` in your terminal
+1. Run `npm start` to start the app in dev mode
+1. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+## Made with
+
+- React
+- React Router 6
+- PropTypes
 
 ### `npm start`
 
