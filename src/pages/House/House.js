@@ -7,9 +7,13 @@ import Profile from "../../components/Profile/Profile";
 import Loader from "../../components/Layout/Loader";
 import styles from "./House.module.css";
 
+/**
+ * @returns {JSX.Element} House Page JSX
+ */
 const House = () => {
   const [houseData, setHouseData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  // House id
   const { id } = useParams();
 
   useEffect(() => {
@@ -22,8 +26,16 @@ const House = () => {
       .catch((err) => console.log(err));
   }, [id]);
 
+  /**
+   * @returns {JSX.Element} House page JSX JSX when house id exists
+   */
   const displayHousePage = () => {
     const { title, pictures, description, equipments } = houseData;
+
+    /**
+     * Stores equipments array as a string with better formating
+     * @type {String}
+     */
     const equipmentsDescription = equipments
       .map((item) => item + "\n")
       .join("");

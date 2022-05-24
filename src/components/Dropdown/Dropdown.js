@@ -4,6 +4,12 @@ import Chevron from "../UI/SVG/Chevron";
 import styles from "./Dropdown.module.css";
 import { useLocation } from "react-router-dom";
 
+/**
+ * @param {Object} props
+ * @param {String} props.title
+ * @param {String} props.description
+ * @returns {JSX.Element} Dropdown Component
+ */
 const Dropdown = ({ title, description }) => {
   const { pathname } = useLocation();
   const isAboutPage = pathname === "/about";

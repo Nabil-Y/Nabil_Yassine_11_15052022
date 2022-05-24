@@ -6,6 +6,10 @@ import About from "./pages/About/About";
 import House from "./pages/House/House";
 import { Routes, Route } from "react-router-dom";
 
+/**
+ * Main App with router
+ * @returns {JSX.Element} Full React App code
+ */
 const App = () => {
   return (
     <>

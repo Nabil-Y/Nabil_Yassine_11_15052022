@@ -4,6 +4,9 @@ import homeImg from "../../assets/home-img.jpg";
 import aboutImg from "../../assets/about-img.jpg";
 import { useLocation } from "react-router-dom";
 
+/**
+ * @returns {JSX.Element} Banner Component
+ */
 const Banner = () => {
   const { pathname } = useLocation();
   if (pathname === "/")

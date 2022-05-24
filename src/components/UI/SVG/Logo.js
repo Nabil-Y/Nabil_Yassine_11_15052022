@@ -1,5 +1,8 @@
 import React from "react";
 
+/**
+ * @returns {JSX.Element} JSX code of Logo SVG
+ */
 const Logo = () => {
   return (
     <svg

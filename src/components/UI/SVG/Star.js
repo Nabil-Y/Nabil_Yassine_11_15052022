@@ -1,5 +1,8 @@
 import React from "react";
 
+/**
+ * @returns {JSX.Element} JSX code of Star SVG
+ */
 const Star = () => {
   return (
     <svg

@@ -1,8 +1,6 @@
-import { render, screen, waitFor } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
+import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import Header from "./components/Layout/Header";
-import Home from "./pages/Home/Home";
 
 describe("Header tests", () => {
   render(<Header />, { wrapper: MemoryRouter });
@@ -12,11 +10,4 @@ describe("Header tests", () => {
     expect(aboutLink).toBeInTheDocument();
     expect(homeLink).toBeInTheDocument();
   });
-  // test("Header navigation clicks", async () => {
-  //   const homeLink = screen.getByText("Accueil");
-  //   userEvent.click(homeLink);
-  //   await waitFor(screen.getByText("Chez vous"));
-  //   const homeBannerText = screen.getByText("Chez vous");
-  //   expect(homeBannerText).toBeInTheDocument();
-  // });
 });

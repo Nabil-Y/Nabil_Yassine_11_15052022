@@ -2,6 +2,14 @@ import React from "react";
 import PropTypes from "prop-types";
 import styles from "./Thumb.module.css";
 
+/**
+ * @param {Object} props
+ * @param {String} props.imgURL
+ * @param {String} props.imgALT
+ * @param {String} props.title
+ * @returns {JSX.Element} Thumb JSX Code
+ */
+
 const Thumb = ({ imgURL, imgALT, title }) => {
   return (
     <article className={styles.thumb}>

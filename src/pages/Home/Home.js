@@ -5,6 +5,9 @@ import Thumb from "../../components/UI/Thumb";
 import Loader from "../../components/Layout/Loader";
 import styles from "./Home.module.css";
 
+/**
+ * @returns {JSX.Element} Home Page JSX
+ */
 const Home = () => {
   const [houseData, setHouseData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);

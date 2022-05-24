@@ -3,6 +3,9 @@ import Logo from "../UI/SVG/Logo";
 import styles from "./Header.module.css";
 import { Link, useLocation } from "react-router-dom";
 
+/**
+ * @returns {JSX.Element} Header Component
+ */
 const Header = () => {
   const { pathname } = useLocation();
   const isAboutPage = pathname === "/about";

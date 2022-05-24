@@ -3,6 +3,11 @@ import PropTypes from "prop-types";
 import Star from "./SVG/Star";
 import styles from "./Stars.module.css";
 
+/**
+ * @param {Object} props
+ * @param {String} props.rating
+ * @returns {JSX.Element} Stars Component JSX code
+ */
 const Stars = ({ rating }) => {
   const starsContainer = [<Star />, <Star />, <Star />, <Star />, <Star />];
   const numberRating = +rating;

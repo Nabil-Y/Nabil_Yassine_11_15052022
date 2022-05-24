@@ -2,6 +2,9 @@ import React from "react";
 import Logo from "../UI/SVG/Logo";
 import styles from "./Footer.module.css";
 
+/**
+ * @returns {JSX.Element} Footer Component
+ */
 const Footer = () => {
   return (
     <footer className={styles.footer}>

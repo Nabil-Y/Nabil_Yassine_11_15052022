@@ -4,6 +4,9 @@ import Dropdown from "../../components/Dropdown/Dropdown";
 import aboutData from "../../data/about";
 import styles from "./About.module.css";
 
+/**
+ * @returns {JSX.Element} About Page JSX
+ */
 const About = () => {
   return (
     <main className={styles["about-page"]}>

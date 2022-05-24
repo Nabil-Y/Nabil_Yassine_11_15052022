@@ -2,6 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 import styles from "./Loader.module.css";
 
+/**
+ * @returns {JSX.Element} Loader Component
+ */
 const LoaderJSX = () => (
   <div className={styles.loader}>
     <div className={styles.content}>

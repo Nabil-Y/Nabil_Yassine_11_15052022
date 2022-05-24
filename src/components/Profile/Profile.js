@@ -4,9 +4,13 @@ import Tag from "../UI/Tag";
 import Stars from "../UI/Stars";
 import styles from "./Profile.module.css";
 
+/**
+ * @param {Object} props
+ * @param {Object} props.houseData
+ * @returns {JSX.Element} Profile component
+ */
 const Profile = ({ houseData }) => {
   const formattedHostName = houseData.host.name.replace(" ", "\n");
-  console.log(formattedHostName);
   return (
     <section className={styles.profile}>
       <div className={styles["profile-left"]}>

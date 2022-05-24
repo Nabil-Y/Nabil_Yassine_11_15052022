@@ -1,16 +1,17 @@
 .tag {
-  width: 115px;
+  min-width: 115px;
   height: 25px;
   border-radius: 10px;
   font-size: 14px;
   text-align: center;
   background-color: var(--primary-color);
   color: var(--white);
+  padding: 0 2px;
 }
 
 @media screen and (max-width: 768px) {
   .tag {
-    width: 84px;
+    min-width: 84px;
     height: 18px;
     border-radius: 5px;
     font-size: 10px;
